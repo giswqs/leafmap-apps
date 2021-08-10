@@ -2,6 +2,7 @@ import streamlit as st
 from multiapp import MultiApp
 from apps import home, data_stats, demo # import your app modules here
 
+
 app = MultiApp()
 
 # Add all your application here
