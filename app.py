@@ -2,6 +2,8 @@ import streamlit as st
 from multiapp import MultiApp
 from apps import home, data_stats, demo, dual, uber_nyc # import your app modules here
 
+st.set_page_config(layout="wide")
+
 
 app = MultiApp()
 
