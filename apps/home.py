@@ -1,18 +1,29 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-from data.create_data import create_table
+
 
 def app():
-    st.title('Home')
+    st.title("Home")
 
-    st.write("This is a sample home page in the mutliapp.")
-    st.write("See `apps/home.py` to know how to use it.")
+    st.header("Introduction")
+    st.write(
+        "This web app demonstrates how to create interactive maps using leafmap and streamlit."
+    )
 
-    st.markdown("### Sample Data")
-    df = create_table()
-    st.write(df)
+    st.markdown("Source code: <https://github.com/giswqs/leafmap-apps>")
 
-    st.write('Navigate to `Data Stats` page to visualize the data')
+    st.header("Example")
 
+    with st.echo():
+        import leafmap.foliumap as leafmap
 
+        filepath = "https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/us_cities.csv"
+        m = leafmap.Map(tiles="stamentoner")
+        m.add_heatmap(
+            filepath,
+            latitude="latitude",
+            longitude="longitude",
+            value="pop_max",
+            name="Heat map",
+            radius=20,
+        )
+        m.to_streamlit(width=700, height=500)

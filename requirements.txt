@@ -1,5 +1,6 @@
-streamlit
+geopandas
+keplerglstreamlit
 streamlit-folium
 streamlit-keplergl
-git+git://github.com/giswqs/whitebox
+xarray_leaflet
 git+git://github.com/giswqs/leafmap
