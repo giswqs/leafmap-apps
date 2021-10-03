@@ -1,5 +1,6 @@
 geopandas
-keplerglstreamlit
+keplergl
+streamlit
 streamlit-folium
 streamlit-keplergl
 xarray_leaflet
