@@ -9,6 +9,12 @@ def app():
 
     basemap = st.selectbox("Select a basemap", keys)
 
+    code = f"""import leafmap
+m = leafmap.Map()
+m.add_basemap('{basemap}')
+m"""
+    st.code(code)
+
     m = leafmap.Map()
     m.add_basemap(basemap)
     m.to_streamlit()

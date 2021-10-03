@@ -10,13 +10,18 @@ def app():
     )
 
     if backend == "ipyleaflet":
-        import leafmap.leafmap as leafmap
+        with st.echo():
+            import leafmap.leafmap as leafmap
     elif backend == "folium":
-        import leafmap.foliumap as leafmap
+        with st.echo():
+            import leafmap.foliumap as leafmap
     elif backend == "heremap":
-        import leafmap.heremap as leafmap
+        with st.echo():
+            import leafmap.heremap as leafmap
     elif backend == "keperl.gl":
-        import leafmap.kepler as leafmap
+        with st.echo():
+            import leafmap.kepler as leafmap
 
-    m = leafmap.Map()
-    m.to_streamlit()
+    with st.echo():
+        m = leafmap.Map()
+        m.to_streamlit()
