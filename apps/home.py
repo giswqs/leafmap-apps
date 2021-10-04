@@ -10,6 +10,7 @@ def app():
     )
 
     st.markdown("Source code: <https://github.com/giswqs/leafmap-apps>")
+    st.markdown("Web app: <https://gishub.org/leafmap-apps>")
 
     st.header("Example")
 

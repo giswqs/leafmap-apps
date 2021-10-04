@@ -4,7 +4,7 @@ import leafmap.foliumap as leafmap
 
 def app():
 
-    st.title("Customize map size")
+    st.title("Customize the default map")
 
     def _update_slider(width_value, height_value, zoom_value, lat_value, lon_value):
         st.session_state["width_slider"] = width_value

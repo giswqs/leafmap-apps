@@ -3,7 +3,7 @@ import leafmap.foliumap as leafmap
 
 
 def app():
-    st.title("Basemaps")
+    st.title("Change basemaps")
 
     keys = list(leafmap.folium_basemaps.keys())[1:]
 

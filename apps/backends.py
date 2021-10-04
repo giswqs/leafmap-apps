@@ -3,7 +3,7 @@ import streamlit as st
 
 def app():
 
-    st.title("Plotting backends")
+    st.title("Create an interactive map")
 
     backend = st.selectbox(
         "Select a plotting backend",
