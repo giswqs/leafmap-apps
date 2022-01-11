@@ -1,7 +1,5 @@
 geopandas
 keplergl
 streamlit
-streamlit-folium
-streamlit-keplergl
-xarray_leaflet
-git+git://github.com/giswqs/leafmap
+git+https://github.com/giswqs/leafmap
+git+https://github.com/giswqs/geemap
